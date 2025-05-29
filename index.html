@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carta para Meu Amor</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap');
+    
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fce7f0; /* rosa bebê claro */
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Fundo com tulipas desenhadas */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background:
+        radial-gradient(circle at 30% 80%, #f8b7c2 20%, transparent 21%),
+        radial-gradient(circle at 50% 70%, #fff0f2 15%, transparent 16%),
+        radial-gradient(circle at 70% 80%, #f06269 25%, transparent 26%);
+      background-repeat: repeat;
+      background-size: 150px 150px;
+      opacity: 0.15;
+      z-index: -1;
+    }
+
+    .container {
+      text-align: center;
+      padding: 20px;
+      max-width: 600px;
+      width: 90vw;
+      background: rgba(255 255 255 / 0.85);
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      backdrop-filter: blur(10px);
+    }
+
+    .envelope {
+      width: 200px;
+      height: 150px;
+      background-color: #ffb6c1;
+      border-radius: 10px;
+      margin: 0 auto 40px auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      cursor: pointer;
+      transition: transform 0.4s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .envelope:hover {
+      transform: scale(1.05);
+    }
+
+    .heart {
+      font-size: 3rem;
+      color: white;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    .message {
+      display: none;
+      animation: fadeIn 1.5s ease forwards;
+      text-align: left;
+      color: #333;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      color: #d94f6b;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .hello-kitty {
+      width: 180px;
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      opacity: 0.95;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    .nos {
+      width: 180px;
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      opacity: 0.95;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    .nos2 {
+      width: 180px;
+      position: fixed;
+      bottom: 700px;
+      right: 10px;
+      opacity: 0.95;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    .nos3 {
+      width: 180px;
+      position: fixed;
+      bottom: 760px;
+      left: 10px;
+      opacity: 0.95;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    audio {
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 15px;
+      }
+      .hello-kitty {
+        width: 70px;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="envelope" onclick="openLetter()" aria-label="Abrir carta" role="button" tabindex="0" onkeypress="if(event.key==='Enter'){openLetter();}">
+      <div class="heart" aria-hidden="true">❤️</div>
+    </div>
+
+    <div class="message" id="message" role="region" aria-live="polite">
+      <h2>Minha Esposa ❤️</h2>
+      <p>
+        Esta não é apenas uma carta, é um pedaço do meu coração.<br><br>
+        Roii meu amor, que começo chique né ksksksks. Como você está meu bem? Acho que você não entendeu nada quado eu te deu o qr code(espero que eu tenha conseguido criar um qr code ksksks). Esse é o seu presente, uma carata para você, eu sei que não sou muito de escrever cartas, eu tenho dificuldades de escrever, sla, minha letra é horrivel também, mas não se preocupe, terá muitas cartas para você, meu amor. Eu queria dizer que eu te amo muito meu amor, muito mesmo, não consigo ficar sem você na minha vida. Só de pensar que um dia eu posso ficar sem você, eu fico com vontade de chorar. Essa carta é meio que um prólogo do presente do dia dos namorados. AHHH o ano passado ksksksks, levei tempo fazendo aquela caixa para você, um spoiler... vai ser parecido com o presente do ano passado. Eu fiz essa carta pq eu sei que você não está muito bem, eu sei que ela vai fazer você melhor, o presente vai ser uma espécie de acesso para relembrar de alguns momentos, já falei dms amor ksksksk. Mas enfim meu amor, quero que saiba que eu estarei com você sempre, apoiando você sempre, te amando sempre, sempre pensando em você, sempre te admirando, sempre querendo tocar em você, sentir o seu cheiro, estar em sua presença para sempre meu amor. Eu te amo muito minha esposa. Muito mesmo meu amor, AHHHHHHHHHHHHHHHHHHHHHHHHHHH EU TE AMOOOOOOOOOOOOOOOOOOO MUITO MINHA PRINCESA.<br><br>
+        Obrigado por existir na minha vida. Espere por mais qr codes.🌷
+      </p>
+    </div>
+  </div>
+
+  <img class="hello-kitty" src="transferir.jpg" alt="Hello Kitty personalizada" />
+  <img class="nos" src="20250306182305097.jpg" alt="nossa foto" />
+  <img class="nos2" src="foto2.jpg" alt="nossa foto2" />
+  <img class="nos3" src="foto3.jpg" alt="nossa foto3" />
+
+
+  <script>
+    function openLetter() {
+      const message = document.getElementById('message');
+      message.style.display = 'block';
+      document.querySelector('.envelope').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
